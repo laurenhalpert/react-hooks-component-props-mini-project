@@ -4,7 +4,7 @@ function Article({title, date="January 1, 1970", preview, minutes}) {
     let num = 0;
     const coffee = []
     let joinedStr="";
-    const bentos =["🍱"]
+    //const bentos =[];
     
     if (minutes <30) {
         num = Math.ceil(minutes/5)*5
@@ -17,7 +17,7 @@ function Article({title, date="January 1, 1970", preview, minutes}) {
             joinedStr = coffee.join('')
         }
         numberCoffees()
-    } else {
+    } /*else {
         num = Math.ceil(minutes/10)*10
         function numberBentos() {
             let numBentos = num/10;
@@ -28,7 +28,7 @@ function Article({title, date="January 1, 1970", preview, minutes}) {
             joinedStr = bentos.join('')
         }
         numberBentos()
-    }
+    }*/
     
     return(
         <article>
